@@ -248,23 +248,26 @@ input[type="file"] {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
   }
-
-  .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-
-  .col-3 {
-    width: 100%;
-  }
-
-  .img-thumbnail {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-
 }
 
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.dynamic-div {
+  padding: 15px;
+  flex: 0 0 calc(33.33% - 30px);
+}
+
+.img-thumbnail {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 auto;
+}

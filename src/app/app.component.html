@@ -17,10 +17,10 @@
 
   <div class="gallery" *ngIf="imageUrls.length > 0">
     <h4>Search Results</h4>
-    <div class="parent">
-      <div *ngFor="let imageUrl of imageUrls; let i = index" class="dynamic-div">
-        <img [src]="imageUrl" alt="Found Image" class="img-thumbnail">
-      </div>
+    <div class="images-container">
+    <div *ngFor="let imageUrl of imageUrls; let i = index" class="dynamic-div">
+      <img [src]="imageUrl" alt="Found Image" class="img-thumbnail">
+    </div>
     </div>
   </div>
 
